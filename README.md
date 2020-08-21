@@ -1,2 +1,2 @@
 # dedeogluhu.github.io
-Simple website
+Github Pages Test
