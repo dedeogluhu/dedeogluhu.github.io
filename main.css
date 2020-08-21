@@ -1,3 +1,5 @@
 div {
-    align-self: center;
+    width: 300px;
+    background-color: aqua;
+    align-content: center;
 }
