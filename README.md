@@ -1,2 +1,5 @@
 # dedeogluhu.github.io
-Github Pages Test
+
+A portfolio website that i have designed and coded.
+
+Soon to be added a new host.
