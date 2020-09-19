@@ -1,90 +1,138 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Jekyll v4.1.1">
-
-
-  <title>Dedeogluhu</title>
-
-  <link rel="icon" href="icons/code-icon.png">
-
-  <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/cover/">
-
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-  </style>
-  <!-- Custom styles for this template -->
-  <link href="css/cover.css" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dedeogluhu</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/45a060488d.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="text-center">
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h2 id="logo">
+                <span class="text-orange">D</span>edeoglu<span class="text-orange">h</span>u
+            </h2>
+            <ul class="nav-links">
+                <li>
+                    <a href="#main">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About Me</a>
+                </li>
+                <li>
+                    <a href="#resume">Resume</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+            </ul>
 
-  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <a href="#contact" class="btn-contact">Contact</a>
 
-    <header class="masthead mb-auto">
-      <div class="inner">
-        <h3 class="masthead-brand">Dedeogluhu</h3>
-        <nav class="nav nav-masthead justify-content-center">
-          <a class="nav-link active" href="https://dedeogluhu.github.io/">Home</a>
-          <!--a class="nav-link" href="#">Features</a-->
-          <a class="nav-link" href="https://dedeogluhu.github.io/contact">Contact</a>
         </nav>
-      </div>
     </header>
 
-    <main role="main" class="inner cover">
+    <!-- Main Section -->
+    <section id="main">
+        <h1 class="section-header">Hi There👋</h1>
+        <p class="main-para">Welcome to my website <br> I'm Hüseyin Dedeoğlu</p>
+        <h2 class="main-second-header"> You can find more about me <a href="#about" class="text-orange">here</a></h2>
+    </section>
 
-      <h1 class="cover-heading">Hi there 👋</h1>
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="section-header">About Me</h1>
+        <p class="main-para" style="text-align: start; padding-left: 15vw;">
+            -I'm a self-taught fullstack programmer from Turkey<br>
+            -I'm studying Economics in Yıldız Technical University right now <br>
+            -I was actually a backend programmer but i started doing some frontend stuff to get a job<br>
+            -I have done some game development but get bored of it at a short period of time <br>
+            -I had time with ethical hacking but wanted to give all my time to programming<br>
+        </p>
+    </section>
 
-      <br>
+    <!-- Resume-CV Section -->
+    <section id="resume">
 
-      <p class="lead" style="font-size: 18px; text-align: left;">
+        <h1 class="section-header">Resume</h1>
+        <div class="tab-buttons">
+            <button class="tab-button" onclick=" openTab('education')">Education</button>
+            <button class="tab-button" onclick="openTab('programming-languages')">Programming Languages</button>
+            <button class="tab-button" onclick="openTab('languages')">Languages</button>
+            <button class="tab-button" onclick=" openTab('experience')">Experience</button>
+            <button class="tab-button" onclick="openTab('skills')">Skills</button>
+        </div>
+        <div id="education" class="tab">
+            <h2>Education</h2>
+            <br>
+            <p>I'm currently studying economics in Yıldız Technical University</p>
+        </div>
 
-        ⚡ I'm Hüseyin Dedeoğlu, an Economics student and a self-taught backend programmer from Turkey <br>
-        ⚡ Programming Languages: C#, Python, Javascript <br>
-        ⚡ Languages: Turkish, English, (Currently Learning) Chinese, (Currently Learning) German <br>
-        ⚡ Other Skills : Linux, Git, Html, Css, XML, SQL, Django, node.js <br>
-        ⚡ Had Time with : Ethical Hacking, Game engines (Mostly Unity) <br>
-        ⚡ Planning to Learn : Advanced Microsoft Office apps and Go in the future <br>
-        
-      </p>
-      <!--p class="lead">
-        <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-      </p-->
-    </main>
+        <div id="programming-languages" class="tab" style="display:none;">
+            <h2>Programming Languages</h2>
+            <br>
+            <p>I have done some C# short time ago, currently i often write with Javascript and Python</p>
+        </div>
 
-    <footer class="mastfoot mt-auto">
-      <div class="inner">
-        <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a
-            href="https://twitter.com/mdo">@mdo</a>.</p>
-      </div>
+        <div id="languages" class="tab" style="display:none; ">
+            <h2>Languages</h2>
+            <br>
+            <p>Turkish(main), English(Advanced), Chinese(beginner), German(Learning)</p>
+        </div>
+
+        <div id="experience" class="tab" style="display:none; ">
+            <h2>Experience</h2>
+            <br>
+            <p>I Currently don't have any professional work experience</p>
+        </div>
+
+        <div id="skills" class="tab" style="display:none; ">
+            <h2>Skills</h2>
+            <br>
+            <p>Game Development(beginner), Ethical Hacking(beginner), Git, SQL, Html, Css, Linux</p>
+        </div>
+    </section>
+
+    <!-- Projects Section : TODO -->
+    <section id="projects">
+        <h1 class="section-header">Projects(TODO)</h1>
+    </section>
+
+    <!-- Services Section : TODO -->
+    <section id="services">
+        <h1 class="section-header">Services(TODO)</h1>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1 class="section-header">Contact</h1>
+        <a href="https://instagram.com/dedeogluhu">
+            <i class="fab fa-instagram icon"></i>
+        </a>
+
+        <a href=" https://github.com/dedeogluhu">
+            <i class="fab fa-github icon"></i>
+        </a>
+
+        <a href=" https://twitter.com/dedeogluhu">
+            <i class="fab fa-twitter icon"></i>
+        </a>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Copyright &copy; Hüseyin Dedeoğlu 2020 </p>
     </footer>
-
-  </div>
-
 </body>
 
 </html>
