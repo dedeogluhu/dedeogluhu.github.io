@@ -1,6 +1,6 @@
 # [dedeogluhu.github.io](https://dedeogluhu.github.io/)
 
-A portfolio website that i have designed and coded. 
+Portfolio website that i have designed and coded using vue and bootstrap. 
 
 Source codes are in [this](https://github.com/dedeogluhu/new-portfolio/tree/master) repository
 
